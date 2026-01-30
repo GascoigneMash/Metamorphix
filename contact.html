@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MTX Contact &amp; Global Consultations</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Link to Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9213ec",
+                        "accent-gold": "#D4AF37",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#0a060e",
+                        "surface-dark": "#1a1022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen relative tech-pattern">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+                <span class="material-symbols-outlined text-3xl">hub</span>
+            </div>
+            <h1 class="text-xl font-bold tracking-tight">MTX <span class="text-primary">Metamorphix</span></h1>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Consulting</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Global Hubs</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Insights</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button class="hidden sm:flex bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all">
+                Partner Login
+            </button>
+            <div class="size-10 rounded-full bg-cover border-2 border-primary/30" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCujVkMQGQ9geHwFGKipWBp4QrhnuuKvM9rAKzjn6VSshjyM5_N7kGuYtbPhbn3Wl9PoFrlngDKK-kvXHNgrmr5EkhijQuLybu58DK7gn5qCsscpEF3Ycxv4vIBFdxQmkFIlmr2HZeQy5xnYKYoeN6b2H7SFVf22A-DDvAUC2nfFp1cG-ITPgEdTwBhLnU6TSxFwZepk-kCZ3lb1PvRpgercdJ4KRDCX9Tf-8Om4CLk7h8rZujW1EGa0L1DvYLbXPJ65qhhEaM4");'></div>
+        </div>
+    </div>
+</header>
+<main class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+<!-- Hero Section Header -->
+<div class="mb-12">
+    <span class="text-accent-gold font-semibold tracking-widest uppercase text-xs">Global Digital Transformation</span>
+    <h2 class="text-4xl lg:text-5xl font-black mt-2 leading-tight">Request a Bespoke <span class="text-primary">Consultation</span></h2>
+    <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-2xl">Connect with our global network of ERP experts and technology architects. Let's transform your enterprise infrastructure together.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+    <!-- Left Side: Global Info Hub (40%) -->
+    <div class="lg:w-2/5 space-y-10">
+        <!-- Office Locations -->
+        <div>
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">public</span>
+                Global Presence
+            </h3>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="group p-4 rounded-xl glass-panel border-l-4 border-l-accent-gold hover:bg-primary/5 transition-all">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-white">London (HQ)</h4>
+                            <p class="text-sm text-slate-400">Canary Wharf, Global Strategy Center</p>
+                        </div>
+                        <span class="text-xs bg-accent-gold/20 text-accent-gold px-2 py-1 rounded font-bold">9:00 AM GMT</span>
+                    </div>
+                </div>
+                <div class="p-4 rounded-xl glass-panel hover:bg-primary/5 transition-all">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-white">New York</h4>
+                            <p class="text-sm text-slate-400">Financial District, Americas Hub</p>
+                        </div>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">4:00 AM EST</span>
+                    </div>
+                </div>
+                <div class="p-4 rounded-xl glass-panel hover:bg-primary/5 transition-all">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-white">Dubai</h4>
+                            <p class="text-sm text-slate-400">DIFC, MEA Innovation Lab</p>
+                        </div>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">1:00 PM GST</span>
+                    </div>
+                </div>
+                <div class="p-4 rounded-xl glass-panel hover:bg-primary/5 transition-all">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-white">Singapore</h4>
+                            <p class="text-sm text-slate-400">Marina Bay, Asia-Pacific Hub</p>
+                        </div>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">5:00 PM SGT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quick Actions -->
+        <div>
+            <h3 class="text-xl font-bold mb-6">Instant Support</h3>
+            <div class="flex flex-wrap gap-4">
+                <button class="flex flex-col items-center gap-3 p-5 rounded-xl glass-panel hover:border-primary transition-all w-[calc(50%-0.5rem)] min-w-[140px]">
+                    <div class="size-12 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-2xl">chat</span>
+                    </div>
+                    <span class="text-sm font-medium">WhatsApp</span>
+                </button>
+                <button class="flex flex-col items-center gap-3 p-5 rounded-xl glass-panel hover:border-primary transition-all w-[calc(50%-0.5rem)] min-w-[140px]">
+                    <div class="size-12 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-2xl">mail</span>
+                    </div>
+                    <span class="text-sm font-medium">Direct Email</span>
+                </button>
+            </div>
+        </div>
+        <!-- Social Proof -->
+        <div class="pt-6 border-t border-slate-800">
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Strategic Partners</p>
+            <div class="flex gap-6 grayscale opacity-60">
+                <span class="material-symbols-outlined text-4xl">cloud_queue</span>
+                <span class="material-symbols-outlined text-4xl">security</span>
+                <span class="material-symbols-outlined text-4xl">query_stats</span>
+                <span class="material-symbols-outlined text-4xl">api</span>
+            </div>
+        </div>
+    </div>
+    <!-- Right Side: Quote Request Form (60%) -->
+    <div class="lg:w-3/5">
+        <div class="rounded-2xl glass-panel p-8 lg:p-10 relative overflow-hidden">
+            <!-- Subtle Glow Decoration -->
+            <div class="absolute -top-24 -right-24 size-64 bg-primary/10 blur-[100px] rounded-full"></div>
+            <!-- Progress Bar -->
+            <div class="mb-10">
+                <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                    <span class="text-primary">Project Details</span>
+                    <span class="text-slate-500">Step 2 of 4</span>
+                </div>
+                <div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-primary w-1/2 rounded-full"></div>
+                </div>
+            </div>
+            <form class="space-y-8">
+                <!-- Form Section 1: Service Selection -->
+                <div class="space-y-4">
+                    <label class="block text-sm font-bold text-slate-300">Select Transformation Service</label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="relative">
+                            <input class="peer hidden" id="erp" type="checkbox"/>
+                            <label class="flex items-center gap-3 p-4 rounded-lg border border-slate-700 bg-slate-900/50 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 transition-all" for="erp">
+                                <span class="material-symbols-outlined text-primary">layers</span>
+                                <span class="text-sm font-medium">ERP Strategy</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input class="peer hidden" id="cloud" type="checkbox"/>
+                            <label class="flex items-center gap-3 p-4 rounded-lg border border-slate-700 bg-slate-900/50 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 transition-all" for="cloud">
+                                <span class="material-symbols-outlined text-primary">cloud</span>
+                                <span class="text-sm font-medium">Cloud Migration</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input checked="" class="peer hidden" id="ai" type="checkbox"/>
+                            <label class="flex items-center gap-3 p-4 rounded-lg border border-slate-700 bg-slate-900/50 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 transition-all" for="ai">
+                                <span class="material-symbols-outlined text-primary">psychology</span>
+                                <span class="text-sm font-medium">AI Integration</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input class="peer hidden" id="data" type="checkbox"/>
+                            <label class="flex items-center gap-3 p-4 rounded-lg border border-slate-700 bg-slate-900/50 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 transition-all" for="data">
+                                <span class="material-symbols-outlined text-primary">analytics</span>
+                                <span class="text-sm font-medium">Data Architecture</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Section 2: Budget Range -->
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <label class="block text-sm font-bold text-slate-300">Estimated Project Budget</label>
+                        <span class="text-primary font-bold text-lg" id="budget-value">$150,000 - $250,000</span>
+                    </div>
+                    <input class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-primary" max="1000000" min="10000" step="10000" type="range"/>
+                    <div class="flex justify-between text-[10px] text-slate-500 font-bold uppercase">
+                        <span>$10k</span>
+                        <span>$500k</span>
+                        <span>$1M+</span>
+                    </div>
+                </div>
+                <!-- Form Section 3: Project Timeline -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-300">Target Launch</label>
+                        <select class="w-full bg-slate-900/50 border-slate-700 rounded-lg text-white focus:ring-primary focus:border-primary">
+                            <option>Q1 2024</option>
+                            <option>Q2 2024</option>
+                            <option>Q3 2024</option>
+                            <option>Q4 2024</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-300">Industry Sector</label>
+                        <select class="w-full bg-slate-900/50 border-slate-700 rounded-lg text-white focus:ring-primary focus:border-primary">
+                            <option>FinTech</option>
+                            <option>Healthcare</option>
+                            <option>Manufacturing</option>
+                            <option>Logistics</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Form Section 4: Details -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-slate-300">Brief Project Description</label>
+                    <textarea class="w-full bg-slate-900/50 border-slate-700 rounded-lg text-white focus:ring-primary focus:border-primary" placeholder="Outline your current challenges and desired outcomes..." rows="4"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="pt-4 flex items-center justify-between gap-6">
+                    <button class="text-slate-400 font-bold text-sm hover:text-white transition-colors" type="button">
+                        Back to Profile
+                    </button>
+                    <button class="flex-1 bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20" type="submit">
+                        <span>Continue to Review</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- Compliance Note -->
+        <p class="text-center text-slate-500 text-[10px] mt-6 px-12 leading-relaxed">
+            By submitting this form, you agree to our <a class="text-primary underline" href="#">Privacy Policy</a> and <a class="text-primary underline" href="#">Terms of Service</a>. MTX Metamorphix ensures all data is handled under strict GDPR and SOC2 compliance protocols.
+        </p>
+    </div>
+</div>
+</main>
+<!-- Floating AI Chat Trigger -->
+<div class="fixed bottom-8 right-8 z-50">
+    <button class="size-16 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:scale-105 transition-transform">
+        <span class="material-symbols-outlined text-3xl">smart_toy</span>
+    </button>
+</div>
+<!-- Map Visualization Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+    <div class="h-64 rounded-2xl overflow-hidden glass-panel grayscale opacity-50 relative group cursor-crosshair">
+        <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute bottom-6 left-6 z-20">
+            <p class="text-xs font-bold text-accent-gold uppercase mb-1">Interactive Map</p>
+            <h3 class="text-lg font-bold">Explore Our Digital Ecosystem</h3>
+        </div>
+        <div class="w-full h-full bg-cover bg-center" data-alt="Stylized tech world map showing office locations" data-location="Global" style="">
+            <!-- Using a gradient as fallback for map visualization -->
+            <div class="w-full h-full bg-gradient-to-br from-slate-900 via-primary/5 to-slate-900"></div>
+        </div>
+    </div>
+</section>
+<footer class="border-t border-slate-800 bg-background-dark py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3 opacity-50">
+            <span class="material-symbols-outlined">hub</span>
+            <p class="text-xs font-medium">© 2024 MTX Metamorphix Global Consulting Group.</p>
+        </div>
+        <div class="flex gap-8 text-xs font-bold text-slate-500 uppercase tracking-widest">
+            <a class="hover:text-primary transition-colors" href="#">Legal</a>
+            <a class="hover:text-primary transition-colors" href="#">Security</a>
+            <a class="hover:text-primary transition-colors" href="#">Compliance</a>
+            <a class="hover:text-primary transition-colors" href="#">ESG Report</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

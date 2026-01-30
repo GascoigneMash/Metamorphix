@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MTX Technical Consultation Booking</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Link to Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9213ec",
+                        "gold": "#D4AF37",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#0a0a0a",
+                        "card-dark": "#151118",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+        /* Local overrides to ensure immediate matching, duplicates in styles.css */
+        .gold-border {
+            border: 1px solid #D4AF37;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #151118;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #9213ec;
+            border-radius: 10px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white min-h-screen">
+<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 md:px-10 py-3">
+    <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-8">
+            <div class="flex items-center gap-3">
+                <div class="size-8 text-primary">
+                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+                        <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold leading-tight tracking-tight uppercase">MTX Metamorphix</h2>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Case Studies</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-6">
+            <button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+                Client Portal
+            </button>
+        </div>
+    </div>
+</header>
+<main class="max-w-[1440px] mx-auto px-6 md:px-10 py-12 lg:py-20">
+    <div class="mb-16">
+        <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6">Architect Your <span class="text-primary">Digital Future</span></h1>
+        <p class="text-xl text-slate-400 max-w-3xl leading-relaxed">
+            Book a high-level strategic engineering session with our senior architects. We solve complex ERP and software challenges through precision technical consulting.
+        </p>
+    </div>
+    <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5 space-y-12">
+            <section>
+                <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-gold mb-8 flex items-center gap-3">
+                    <span class="w-8 h-[1px] bg-gold"></span>
+                    Consultation Benefits
+                </h3>
+                <div class="space-y-8">
+                    <div class="flex gap-6 group">
+                        <div class="size-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined text-primary text-3xl">analytics</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-1">Gap Analysis</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Detailed identification of inefficiencies in your current digital infrastructure and workflows.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div class="size-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined text-primary text-3xl">map</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-1">ERP Roadmap</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">A step-by-step technical blueprint for Sage implementation or migration strategies.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div class="size-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined text-primary text-3xl">security</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-1">Scalability Audit</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Testing your architecture against future growth projections to ensure long-term stability.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="p-8 rounded-2xl bg-white/5 border border-white/10 relative overflow-hidden">
+                <div class="absolute -right-4 -bottom-4 opacity-5">
+                    <span class="material-symbols-outlined text-8xl">headset_mic</span>
+                </div>
+                <div class="relative z-10">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6">Direct Line</h4>
+                    <p class="text-sm text-slate-400 mb-6">For urgent enterprise inquiries or custom scheduling needs:</p>
+                    <div class="flex flex-col gap-4">
+                        <a class="flex items-center gap-4 text-white hover:text-primary transition-colors group" href="#">
+                            <div class="size-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary/20">
+                                <span class="material-symbols-outlined text-xl">chat</span>
+                            </div>
+                            <span class="font-medium">WhatsApp Priority Support</span>
+                        </a>
+                        <a class="flex items-center gap-4 text-white hover:text-primary transition-colors group" href="#">
+                            <div class="size-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary/20">
+                                <span class="material-symbols-outlined text-xl">alternate_email</span>
+                            </div>
+                            <span class="font-medium">enterprise@mtx-solutions.com</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="lg:col-span-7">
+            <div class="gold-border bg-card-dark rounded-3xl overflow-hidden shadow-2xl">
+                <div class="border-b border-white/10 p-6 flex justify-between items-center bg-white/5">
+                    <div class="flex items-center gap-4">
+                        <div class="flex -space-x-2">
+                            <div class="size-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold border-2 border-card-dark">1</div>
+                            <div class="size-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold border-2 border-card-dark text-slate-500">2</div>
+                            <div class="size-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold border-2 border-card-dark text-slate-500">3</div>
+                        </div>
+                    </div>
+                    <span class="text-sm font-bold uppercase tracking-widest">Schedule Session</span>
+                </div>
+                <span class="text-xs text-slate-500 font-medium">Timezone: UTC +0 (London)</span>
+                <div class="p-8">
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                                <h5 class="font-bold">October 2024</h5>
+                                <div class="flex gap-2">
+                                    <button class="size-8 flex items-center justify-center rounded-lg border border-white/10 hover:bg-white/5 transition-colors">
+                                        <span class="material-symbols-outlined text-sm">chevron_left</span>
+                                    </button>
+                                    <button class="size-8 flex items-center justify-center rounded-lg border border-white/10 hover:bg-white/5 transition-colors">
+                                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="calendar-grid text-center text-[10px] font-bold text-slate-500 uppercase mb-2">
+                                <div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div>
+                            </div>
+                            <div class="calendar-grid gap-1">
+                                <div class="h-10 text-slate-700 flex items-center justify-center text-sm">28</div>
+                                <div class="h-10 text-slate-700 flex items-center justify-center text-sm">29</div>
+                                <div class="h-10 text-slate-700 flex items-center justify-center text-sm">30</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">1</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">2</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">3</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">4</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">5</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">6</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">7</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">8</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">9</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">10</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">11</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">12</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">13</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">14</div>
+                                <div class="h-10 flex items-center justify-center text-sm bg-primary rounded-lg cursor-pointer text-white font-bold">15</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">16</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">17</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">18</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">19</div>
+                                <div class="h-10 flex items-center justify-center text-sm hover:bg-primary/20 rounded-lg cursor-pointer transition-colors">20</div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h5 class="font-bold flex items-center gap-2">
+                                Available Times 
+                                <span class="text-xs font-normal text-slate-500">Oct 15, 2024</span>
+                            </h5>
+                            <div class="grid grid-cols-1 gap-3 max-h-[280px] overflow-y-auto custom-scrollbar pr-2">
+                                <button class="w-full py-3 px-4 border border-white/10 rounded-xl hover:border-primary hover:bg-primary/10 transition-all text-sm font-medium flex justify-between items-center group">
+                                    09:00 AM 
+                                    <span class="opacity-0 group-hover:opacity-100 text-primary text-xs font-bold">Select</span>
+                                </button>
+                                <button class="w-full py-3 px-4 border border-primary/50 bg-primary/20 rounded-xl text-sm font-bold flex justify-between items-center">
+                                    10:30 AM
+                                    <span class="text-primary text-xs uppercase">Selected</span>
+                                </button>
+                                <button class="w-full py-3 px-4 border border-white/10 rounded-xl hover:border-primary hover:bg-primary/10 transition-all text-sm font-medium flex justify-between items-center group">
+                                    01:30 PM
+                                    <span class="opacity-0 group-hover:opacity-100 text-primary text-xs font-bold">Select</span>
+                                </button>
+                                <button class="w-full py-3 px-4 border border-white/10 rounded-xl hover:border-primary hover:bg-primary/10 transition-all text-sm font-medium flex justify-between items-center group">
+                                    03:00 PM
+                                    <span class="opacity-0 group-hover:opacity-100 text-primary text-xs font-bold">Select</span>
+                                </button>
+                                <button class="w-full py-3 px-4 border border-white/10 rounded-xl hover:border-primary hover:bg-primary/10 transition-all text-sm font-medium flex justify-between items-center group">
+                                    04:30 PM
+                                    <span class="opacity-0 group-hover:opacity-100 text-primary text-xs font-bold">Select</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-10 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                            <div class="flex items-center gap-4">
+                                <div class="size-12 rounded-full overflow-hidden border border-gold">
+                                    <img alt="Lead Architect" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxR_tCYdZnyQvoYcRBlwDPbEqlbIkjfr2jUpBssBfCf3eoatoBr73S2DPyUb4-O0fBhEOcTGjbVOqkdDYo5_nBo1IKqdrEjJllEPsJXMnc2umF6SQQvnVbzNzd90BEuhngDU9xNXnAaACNMNaZd0G36i5Ty4tTGJN-Q79_oLuWEK2ZNeFBixZj0q_GQpQI-0TsqZJGccVPoQx9W8dc29ZyFfEWM_pOB6Mg7WTxqJljcyZzLouPE_lI5omV62jgyucVAb6vvJBB"/>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Host</p>
+                                    <p class="text-sm font-bold">Marcus Sterling, Lead Solution Architect</p>
+                                </div>
+                            </div>
+                            <button class="w-full md:w-auto px-10 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-[0_0_20px_rgba(146,19,236,0.4)] transition-all">
+                                Confirm Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-6 text-center text-xs text-slate-500">
+                A secure video link and agenda will be sent to your corporate email upon confirmation.
+            </p>
+        </div>
+    </div>
+</main>
+<footer class="border-t border-white/10 py-12 px-6 bg-card-dark/50 mt-20">
+    <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-slate-500 text-sm">
+        <div class="flex items-center gap-4">
+            <div class="size-6 text-slate-500 opacity-50">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+                    <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <p>© 2024 MTX Metamorphix. All rights reserved.</p>
+        </div>
+        <div class="flex gap-8">
+            <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+            <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+            <a class="hover:text-white transition-colors" href="#">Cookie Settings</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
