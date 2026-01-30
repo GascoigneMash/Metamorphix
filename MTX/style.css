@@ -1,0 +1,146 @@
+/* 
+   MTX FINAL MASTER STYLESHEET 
+   Covers Index, Services, Portfolio, Careers, Contact, Pricing, Consultation, and About pages.
+*/
+
+/* --- FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+/* --- GLOBAL VARIABLES & RESET --- */
+:root {
+    --color-primary: #9213ec;
+    --color-gold: #D4AF37;
+    --color-bg-dark: #0a0a0a;
+    --color-surface-dark: #1a1022;
+    --color-card-dark: #151118;
+    --color-text-secondary: #ad9db9;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Global selection color for consistency */
+::selection {
+    background-color: rgba(146, 19, 236, 0.3);
+}
+
+/* Material Symbols Vertical Alignment Fix */
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+/* --- INDEX PAGE STYLES --- */
+
+/* Navigation Glass Effect */
+.glass-nav {
+    backdrop-filter: blur(16px);
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+/* Hero Gradient Overlay */
+.hero-overlay {
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(10, 10, 10, 0.4) 100%);
+}
+
+/* Gold Border Utility */
+.gold-border {
+    border: 1px solid #D4AF37;
+}
+
+/* Purple Hover Glow Effect */
+.purple-glow:hover {
+    box-shadow: 0 0 25px rgba(146, 19, 236, 0.3);
+}
+
+/* --- SERVICES PAGE STYLES --- */
+
+/* Custom Scrollbar for Sidebar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #151118;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #9213ec;
+    border-radius: 10px;
+}
+
+/* --- PORTFOLIO PAGE STYLES --- */
+
+/* Dark Glass Card Background */
+.glass-card {
+    background: rgba(22, 17, 29, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(146, 19, 236, 0.1);
+}
+
+/* Text Gradient Utility */
+.text-gradient {
+    background: linear-gradient(135deg, #fff 0%, #ad9db9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* --- CAREERS PAGE STYLES --- */
+
+/* Light/Dark Glass Card */
+.glass-card-light {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- CONTACT PAGE STYLES --- */
+
+/* Technical Background Pattern */
+.tech-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(146, 19, 236, 0.05) 1px, transparent 0);
+    background-size: 32px 32px;
+}
+
+/* Glass Panel (Contact/Consultation) */
+.glass-panel {
+    background: rgba(26, 16, 34, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(146, 19, 236, 0.2);
+}
+
+/* --- PRICING PAGE STYLES --- */
+
+/* Enterprise Card Gradient Border */
+.enterprise-card {
+    border: 2px solid transparent;
+    background-image: linear-gradient(#221c27, #221c27), linear-gradient(to bottom right, #D4AF37, #F9E29C, #9213ec);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* --- CONSULTATION PAGE STYLES --- */
+
+/* Calendar Grid Layout */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* --- ABOUT PAGE STYLES --- */
+
+/* Timeline Line Gradient */
+.timeline-line {
+    background: linear-gradient(to bottom, #D4AF37 0%, #D4AF37 100%);
+    width: 2px;
+}
+
+/* Grayscale Background for Hero Image */
+.grayscale-bg {
+    filter: grayscale(100%) contrast(1.1);
+}
+
+/* Map Dot Shadow Effect */
+.map-dot {
+    box-shadow: 0 0 15px #9213ec;
+}

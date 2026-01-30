@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MTX Service Plans &amp; Pricing</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Link to Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#9213ec",
+                "background-light": "#f7f6f8",
+                "background-dark": "#1a1022",
+                "gold": "#D4AF37",
+              },
+              fontFamily: {
+                "display": ["Space Grotesk", "sans-serif"],
+                "sans": ["Noto Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen text-slate-900 dark:text-white">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-[#322839] px-10 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+    <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+        <div class="size-6 text-primary">
+            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V44Z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+        <h2 class="text-xl font-bold leading-tight tracking-tight">Metamorphix</h2>
+    </div>
+    <div class="flex flex-1 justify-end gap-8">
+        <div class="hidden md:flex items-center gap-9">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Consulting</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Resources</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+        </div>
+        <button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+            <span class="truncate">Get a Quote</span>
+        </button>
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-primary/20" data-alt="User avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsP0Yl0Qm4AG1s5UcEGRQNWBa05mbrr7V8XM4N06UlqP-LbqeBnOM3ZEyMI4D3bPB53iBR7LEqLFWUV4A9yuj_mwNOubqgC1NSx14y-l7WLvBFPG_qzFtPow7NPs9Afqp4GTG_I9eQP-kxSq9tW6zXm3qLGvUoC0URcb6F8rXXM2YNc4UtJfWRyA4lbdZ3UvcFeulj36y_8D-CpUbgSddwmpw2LznPyUbcwoIyQ4DyCHPS4N1S_4zrkI5uv36xQhKCzvR8zKJ");'></div>
+    </div>
+</header>
+<main class="max-w-[1200px] mx-auto px-6 py-12">
+<!-- Page Heading -->
+<div class="flex flex-col gap-4 mb-12 text-center md:text-left">
+    <h1 class="text-slate-900 dark:text-white text-5xl font-black leading-tight tracking-[-0.033em]">Strategic Service Plans</h1>
+    <p class="text-slate-600 dark:text-[#ad9db9] text-lg max-w-2xl font-normal leading-relaxed">
+        Premium digital transformation and ERP consultancy tailored to your organization's unique growth stage and technological complexity.
+    </p>
+</div>
+<!-- Pricing Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+    <!-- Startup Card -->
+    <div class="flex flex-col gap-6 rounded-xl border border-solid border-slate-200 dark:border-[#493b54] bg-white dark:bg-[#221c27] p-8 transition-all hover:shadow-2xl dark:hover:shadow-primary/5">
+        <div class="flex flex-col gap-2">
+            <h3 class="text-primary text-sm font-bold uppercase tracking-wider">Foundation</h3>
+            <h2 class="text-slate-900 dark:text-white text-2xl font-bold">Startup</h2>
+            <div class="flex items-baseline gap-1 mt-2">
+                <span class="text-slate-900 dark:text-white text-5xl font-black tracking-tight">$2,499</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">/mo</span>
+            </div>
+        </div>
+        <button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-slate-100 dark:bg-[#322839] text-slate-900 dark:text-white text-sm font-bold hover:bg-slate-200 dark:hover:bg-[#43364d] transition-colors">
+            <span class="truncate text-base">Select Plan</span>
+        </button>
+        <div class="flex flex-col gap-4 mt-2">
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                Basic ERP support
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                10 Development hours/mo
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                Standard security audits
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                Shared Slack channel
+            </div>
+        </div>
+    </div>
+    <!-- Growth Card -->
+    <div class="relative flex flex-col gap-6 rounded-xl border border-solid border-primary/50 bg-white dark:bg-[#221c27] p-8 shadow-xl shadow-primary/10 transition-all hover:scale-[1.02]">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+        <div class="flex flex-col gap-2">
+            <h3 class="text-primary text-sm font-bold uppercase tracking-wider">Accelerate</h3>
+            <h2 class="text-slate-900 dark:text-white text-2xl font-bold">Growth</h2>
+            <div class="flex items-baseline gap-1 mt-2">
+                <span class="text-slate-900 dark:text-white text-5xl font-black tracking-tight">$5,999</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">/mo</span>
+            </div>
+        </div>
+        <button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-colors shadow-lg shadow-primary/30">
+            <span class="truncate text-base">Select Plan</span>
+        </button>
+        <div class="flex flex-col gap-4 mt-2">
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                Full ERP management
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                40 Development hours/mo
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                Bi-weekly architecture audits
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                Priority response queue
+            </div>
+        </div>
+    </div>
+    <!-- Enterprise Card -->
+    <div class="enterprise-card flex flex-col gap-6 rounded-xl p-8 transition-all hover:shadow-2xl dark:hover:shadow-gold/10">
+        <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+                <h3 class="text-gold text-sm font-bold uppercase tracking-wider">Corporate</h3>
+                <span class="text-[10px] font-bold text-gold border border-gold px-2 py-0.5 rounded-full uppercase">Gold Tier</span>
+            </div>
+            <h2 class="text-slate-900 dark:text-white text-2xl font-bold">Enterprise</h2>
+            <div class="flex items-baseline gap-1 mt-2">
+                <span class="text-slate-900 dark:text-white text-5xl font-black tracking-tight">Custom</span>
+            </div>
+        </div>
+        <button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-slate-100 dark:bg-transparent border dark:border-gold text-slate-900 dark:text-white text-sm font-bold hover:bg-gold hover:text-white dark:hover:bg-gold transition-all">
+            <span class="truncate text-base">Contact MTX</span>
+        </button>
+        <div class="flex flex-col gap-4 mt-2">
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-gold text-[20px]">verified</span>
+                Custom cloud architecture
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-gold text-[20px]">verified</span>
+                Unlimited development cycles
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-gold text-[20px]">verified</span>
+                Dedicated Solutions Architect
+            </div>
+            <div class="text-sm font-medium flex gap-3 text-slate-700 dark:text-slate-200 items-start">
+                <span class="material-symbols-outlined text-gold text-[20px]">verified</span>
+                24/7 Priority Emergency Hotline
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Comparison Matrix Section -->
+<div class="space-y-6">
+    <div class="flex items-center justify-between px-4">
+        <h2 class="text-slate-900 dark:text-white text-3xl font-bold tracking-tight">Comparison Matrix</h2>
+        <div class="hidden md:flex items-center gap-2 text-sm text-slate-500">
+            <span class="material-symbols-outlined text-sm">info</span>
+            Values updated Q4 2023
+        </div>
+    </div>
+    <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-[#493b54] bg-white dark:bg-[#151118]">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-slate-50 dark:bg-[#221c27]">
+                    <th class="px-6 py-5 text-sm font-bold uppercase tracking-widest text-slate-400 w-1/4">Features</th>
+                    <th class="px-6 py-5 text-sm font-bold text-slate-900 dark:text-white w-1/4">Startup</th>
+                    <th class="px-6 py-5 text-sm font-bold text-slate-900 dark:text-white w-1/4">Growth</th>
+                    <th class="px-6 py-5 text-sm font-bold text-gold w-1/4">Enterprise</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 dark:divide-[#493b54]">
+                <!-- Support -->
+                <tr class="bg-slate-50/50 dark:bg-white/5">
+                    <td class="px-6 py-3 text-xs font-bold text-primary uppercase tracking-widest" colspan="4">Support &amp; Management</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">ERP Support Hours</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">10 hrs/mo</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">40 hrs/mo</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">Unlimited</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">Response SLA</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">24 Hours</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">4 Hours</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">1 Hour Guaranteed</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">Dedicated Manager</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">
+                        <span class="material-symbols-outlined text-slate-300 dark:text-slate-700">remove</span>
+                    </td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">Priority Queue</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">Dedicated Specialist</td>
+                </tr>
+                <!-- Development -->
+                <tr class="bg-slate-50/50 dark:bg-white/5">
+                    <td class="px-6 py-3 text-xs font-bold text-primary uppercase tracking-widest" colspan="4">Development</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">Continuous Dev Cycles</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">1 per mo</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">4 per mo</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">Unlimited Continuous</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">Security Audits</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">Quarterly</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">Monthly</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">Real-time/Automated</td>
+                </tr>
+                <!-- Security -->
+                <tr class="bg-slate-50/50 dark:bg-white/5">
+                    <td class="px-6 py-3 text-xs font-bold text-primary uppercase tracking-widest" colspan="4">Compliance &amp; Ops</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">Data Residency</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">Standard Cloud</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">Regional Select</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">Custom/On-prem</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-6 text-sm font-medium text-slate-900 dark:text-white">Uptime Guarantee</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">99.5%</td>
+                    <td class="px-6 py-6 text-sm text-slate-600 dark:text-[#ad9db9]">99.9%</td>
+                    <td class="px-6 py-6 text-sm font-bold text-gold">99.99% Enterprise SLA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- FAQ Teaser -->
+<div class="mt-20 py-12 border-t border-slate-200 dark:border-[#322839]">
+    <div class="max-w-3xl">
+        <h3 class="text-2xl font-bold mb-6">Frequently Asked Questions</h3>
+        <div class="space-y-4">
+            <details class="group border-b border-slate-200 dark:border-[#322839] pb-4 cursor-pointer">
+                <summary class="flex items-center justify-between font-bold text-lg list-none">
+                    Can I upgrade my plan mid-cycle?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                </summary>
+                <p class="mt-4 text-[#ad9db9] leading-relaxed">
+                    Yes, Metamorphix allows for seamless scaling. When you upgrade, your new hours and response SLAs activate immediately, with costs prorated for remainder of month.
+                </p>
+            </details>
+            <details class="group border-b border-slate-200 dark:border-[#322839] pb-4 cursor-pointer">
+                <summary class="flex items-center justify-between font-bold text-lg list-none">
+                    Is there a long-term commitment?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                </summary>
+                <p class="mt-4 text-[#ad9db9] leading-relaxed">
+                    Startup and Growth plans are month-to-month. Enterprise plans typically involve a 12-month partnership agreement to ensure dedicated architecture and resource allocation.
+                </p>
+            </details>
+        </div>
+    </div>
+</div>
+</main>
+<footer class="bg-slate-50 dark:bg-[#151118] py-12 px-6 border-t border-slate-200 dark:border-[#322839]">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-4 text-slate-900 dark:text-white opacity-50">
+            <div class="size-5">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V44Z" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <h2 class="text-sm font-bold">MTX Consulting Group</h2>
+        </div>
+        <div class="flex gap-8 text-sm text-slate-500 font-medium">
+            <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+            <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+            <a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+        </div>
+        <p class="text-xs text-slate-500">© 2024 Metamorphix Inc. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
